@@ -10,13 +10,26 @@ Anac di recente ha ampliato la sezione dedicata alla pubblicazione dei dati aper
 
 # La nostra proposta 
 
-AppaltiPop consente al momento di consultare i dati sugli appalti di poco più di 30 comuni italiani. E’ un sistema predisposto per gestire dati in formato OCDS, per cui la nostra proposta per il Datathon ANAC è stata quella di immaginare come connettere AppaltiPop direttamente al nuovo portale OCDS di ANAC.
-Come fonte dati abbiamo infatti immaginato di utilizzare i dataset pubblicati in OCDS del portale ANAC (https://dati.anticorruzione.it/opendata/ocds) per alimentare il database utilizzato da AppaltiPop. L'obiettivo è quello di estendere e arricchire la disponibilità di dati consultabili attraverso la piattaforma, creando nello stesso tempo i presupposti per un’analisi più estesa delle Red Flags.
+AppaltiPop consente al momento di consultare i dati sugli appalti di poco più di 30 comuni italiani. E' un sistema che utilizza i dati pubblicati in formato xml da ANAC in base alla legge 190 e lo fa seguendo la pipeline mostrata in figura.
+
+![image](https://user-images.githubusercontent.com/482417/173175284-8d867d65-68be-48a8-ae83-2cb40b8c1bb6.png)
+
+I dati sibuscono farie trasformazioni fino ad arrivare ad essere modellati secondo lo standard OCDS. I dati così ottenuti vengono da una parte pubblicati su una sezione apposita di AppaltiPop per il download, dall'altra vengono ulteriormente trasformati secondo uno schema dati gestito da AppaltiPop. E' in questo passaggio che vengono individuate le eventuali Red Flags.
+
+
+La nostra proposta per il Datathon ANAC è stata quella di immaginare come connettere AppaltiPop direttamente al nuovo portale OCDS di ANAC, andando a rivedere la pipeline di AppaltiPop come mostrato in figura, eliminando le varie trasformazioni intermedie e partendo direttamente dai file OCDS del portale ANAC e riducendo la pipeline del dato alla parte segnata in rosso.  (https://dati.anticorruzione.it/opendata/ocds)
+
+![image](https://user-images.githubusercontent.com/482417/173175572-478ad3c4-14a7-4bb4-a913-8f75b0f2201c.png)
+
+In questo modo si avrà la possibilità di estendere e arricchire la disponibilità di dati consultabili attraverso la piattaforma, creando nello stesso tempo i presupposti per un’analisi più estesa delle Red Flags.
 
 
 # Cosa abbiamo fatto
 
 Siamo così partiti dai dati pubblicati da ANAC in formato OCDS. L'obiettivo è stato quello di creare uno script che potesse leggere i file OCDS, fare le necessarie trasformazioni e generare i dati da pubblicare secondo lo schema utilizzato su AppaltiPop. Il punto di partenza è stata la procedura già utilizzata per alimentare l'attuale AppaltiPop, procedura questa che è stata rivista in vari punti sulla base di una diversa organizzazione dei dati ANAC in OCDS.
+
+
+
 
 
 
