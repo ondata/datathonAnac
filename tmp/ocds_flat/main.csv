@@ -1,0 +1,2 @@
+version,uri,publisher/name,publishedDate,extensions,license,publicationPolicy
+1.1,https://dati.anticorruzione.it/opendata/download/dataset/ocds/filesystem/bulk/2020/10.json,ANAC,2022-05-20T12:00:00Z,https://raw.githubusercontent.com/open-contracting-extensions/ocds_lots_extension/v1.1.4/extension.json,https://creativecommons.org/licenses/by-sa/4.0/legalcode,https://dati.anticorruzione.it/opendata/ocds
